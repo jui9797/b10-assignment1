@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: "Azeret Mono", monospace;
+    font-family: "Azeret Mono" ;
 }
 
 /* shared style */
@@ -143,7 +143,62 @@ text-align: center;
     text-align: center;
     margin: 10px auto;
 }
+.inspiration h2{
+    color:rgb(13, 19, 33);
+    font-size: 32px;
+    font-weight: 800;
+}
 .inspiration p{
     margin-top: 30px;
     margin-bottom: 60px;
+}
+/* video */
+#video{
+  border: 2px solid auto;  
+   max-width: 1100px; 
+   min-height: 580px;
+}
+/* current target */
+.current-target{
+  max-width: 1100px;
+  min-height: 400px;
+  margin: 0 auto;
+  border: 2px solid black;
+  display: flex;
+  gap: 15px;  
+}
+.div1{
+    width: 33%;
+    border-radius: 16px;
+    background: rgba(255, 76, 30, 0.05);
+    padding: 40px;
+}
+.div2{
+    width: 33%;
+    border-radius: 16px;
+    background: rgba(0, 76, 232, 0.05);
+    padding: 40px;
+}
+.div3{
+    width: 33%;
+    border-radius: 16px;
+    background: rgba(255, 223, 0, 0.05);
+    padding: 40px;
+}
+.current-target a{
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    color:rgb(13, 19, 33);
+    
+}
+.current-target h4{
+    font-size: 24px;
+    font-weight: 800;
+    color:rgb(13, 19, 33);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.current-target p{
+    margin-bottom: 40px;
 }
