@@ -5,6 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Azeret Mono" ;
 }
@@ -89,6 +94,14 @@ p{
     font-weight: 600;
 }
 
+/* scroll button */
+#scroll-button{
+    color: white;
+    background-color:rgb(13, 19, 33);
+    border-radius: 8px; 
+    text-decoration: none;   
+}
+
 /* why web dev */
 .web{
     max-width: 1140px;
@@ -109,8 +122,11 @@ p{
     margin-top: 30px;
     margin-bottom: 30px;
 }
+#web-p{
+    text-align: center;
+}
 .web p{
-text-align: center;
+text-align: left;
 }
 .card-box{
     margin: 10px auto;
@@ -121,7 +137,7 @@ text-align: center;
 .card{
     max-width: 985px;
     min-height: 336px;
-    
+    gap: 40px;
     margin: 45px auto;
     display: flex;
     text-align: left;
@@ -178,9 +194,13 @@ text-align: center;
 }
 /* video */
 #video{
-  border: 2px solid auto;  
+  /* border: 2px solid black; */
+  margin: 80px auto;
+  
+  /* margin-bottom: 50px; */
+  align-items: center;  
    max-width: 1100px; 
-   min-height: 580px;
+   min-height: 600px;
 }
 /* current target */
 .current-target{
@@ -260,7 +280,7 @@ text-align: center;
 }
 
 /* support section */
-.support{
+#support{
     max-width: 1140px;
     min-height: 312px;
     text-align: center;
@@ -268,19 +288,20 @@ text-align: center;
     color: white;
     margin: 80px auto;
     border-radius: 16px;
-    /* background-color:linear-gradient(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2),url('../assets/handshake.jpg'); */
-    background-image: url('../assets/handshake.jpg');
-    background-image: linear-gradient(to bottom right, rgba(0,0,0,0.2), rgba(0,0,0,0.2),url('../assets/handshake.jpg'));
+    
+    background-image:  url('../assets/handshake.jpg'), linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+    background-blend-mode: overlay;
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     opacity: 1;
 }
-.support h3{
+#support h3{
     font-size: 36px;
     
 }
-.support-div{
+#support-div{
     margin-top: 20px;
     text-align: center;
     /* border: 2px solid red; */
